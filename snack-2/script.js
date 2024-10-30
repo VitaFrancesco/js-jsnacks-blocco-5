@@ -6,3 +6,9 @@ const people = [
 
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
+// const nameList = [];
+// people.forEach(element => {
+//   nameList.push(element.name);
+// });
+// console.log(nameList.join(', '));
+console.log(people.map(element => element.name));

@@ -21,10 +21,12 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
-let classMarco;
-students.forEach(element => {
-  if (element.name === 'Marco Lanci') {
-    classMarco = element.class;
-  };
-});
-console.log(classMarco);
+
+// let classMarco;
+// students.forEach(element => {
+//   if (element.name === 'Marco Lanci') {
+//     classMarco = element.class;
+//   };
+// });
+// console.log(classMarco);
+console.log(students.find(({name}) => name === 'Marco Lanci').class);

@@ -11,4 +11,4 @@ const people = [
 //   nameList.push(element.name);
 // });
 // console.log(nameList.join(', '));
-console.log(people.map(element => element.name));
+console.log(people.map(({name}) => name).join(', '));
